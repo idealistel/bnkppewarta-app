@@ -1,0 +1,150 @@
+@config "../../tailwind.admin.config.js";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-50 dark:bg-gray-500 text-gray-700;
+}
+nav {
+    @apply shadow-sm;
+}
+aside {
+    @apply md:w-[72px] shadow-sm bg-gray-50;
+
+    .active {
+        @apply bg-primary-500 text-white;
+    }
+
+    .active-link {
+        @apply underline text-gray-950;
+    }
+
+    ul li a {
+        @apply flex items-center w-full px-4 py-2 rounded-xl text-base font-medium transition duration-75 hover:bg-primary-300 dark:text-white dark:hover:bg-primary-700 hover:text-white dark:hover:text-white;
+    }
+
+    ul li ul li a {
+        @apply flex items-center p-2 pl-[60px] w-full rounded-xl text-base font-medium  transition duration-75 hover:bg-primary-300 dark:text-white dark:hover:bg-primary-700 hover:text-white dark:hover:text-white;
+    }
+}
+aside:hover {
+    @apply md:w-[256px] z-50 shadow-lg;
+}
+main {
+    @apply p-4 md:ml-64 h-auto md:mt-12 mt-14;
+}
+.page-title {
+    @apply md:flex text-2xl font-medium start-0 leading-none tracking-tight capitalize text-gray-800 dark:text-white;
+}
+
+.btn {
+    @apply text-sm px-3 py-2 my-auto inline-flex font-medium rounded-lg focus:outline-none capitalize;
+    i {
+        @apply my-auto mr-2;
+    }
+}
+.btn-primary {
+    @apply items-end text-white bg-primary-500 hover:bg-primary-300 focus:ring-4 focus:ring-primary-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800;
+}
+.btn-slate {
+    @apply items-end text-white bg-slate-500 hover:bg-slate-400 focus:ring-4 focus:ring-slate-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800;
+}
+.btn-danger {
+    @apply items-end text-white bg-red-600 hover:bg-red-400 focus:ring-4 focus:ring-red-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800;
+}
+
+.btn-success {
+    @apply items-end text-white bg-green-600 hover:bg-green-400 focus:ring-4 focus:ring-green-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800;
+}
+
+.badge {
+    @apply text-xs text-white font-semibold px-3 py-1.5 rounded-full inline-flex items-center max-h-6;
+    i {
+        @apply my-1;
+    }
+}
+.badge-edit {
+    @apply bg-primary-500 hover:bg-primary-300;
+}
+.badge-delete {
+    @apply bg-red-600 hover:bg-red-400;
+}
+.alert-success {
+    @apply p-2 mb-4 mt-2 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 capitalize;
+}
+.alert-error {
+    @apply p-2 mb-4 mt-2 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 capitalize;
+}
+
+.card {
+    @apply capitalize;
+    @apply w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-4 dark:bg-gray-800 dark:border-gray-700;
+
+    header {
+        @apply inline-flex border-b w-full text-xl font-medium dark:text-white mb-3;
+    }
+    section {
+        @apply max-h-[400px] overflow-y-auto;
+    }
+    footer {
+        @apply inline-flex w-full mt-3;
+    }
+}
+
+.table-container {
+    @apply relative overflow-x-auto overflow-y-auto rounded-lg;
+}
+table {
+    @apply w-full table-auto text-sm text-left text-gray-500 dark:text-gray-400;
+}
+table thead tr {
+    @apply text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400;
+}
+table thead tr th {
+    @apply px-4 py-2 text-center whitespace-nowrap;
+}
+table tbody tr {
+    @apply bg-white dark:bg-gray-800 border-b dark:border-gray-700 dark:hover:bg-gray-700 hover:bg-gray-100 whitespace-nowrap capitalize;
+}
+table tbody tr td {
+    @apply py-1 px-2;
+}
+
+.toggle-user {
+    @apply md:flex hidden ml-3;
+    button {
+        @apply rounded-full px-1.5 border border-x-2 border-y-2 border-sky-950 text-sky-950 md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600;
+    }
+    li a {
+        @apply block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white capitalize;
+    }
+    li button {
+        @apply block px-4 py-2 w-full rounded-none border-none text-start text-sm text-gray-700 bg-white dark:bg-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white capitalize;
+    }
+}
+
+.form-container form {
+    @apply capitalize p-1;
+
+    h5 {
+        @apply text-xl font-medium dark:text-white;
+    }
+}
+.form-container form label {
+    @apply block mb-2 text-sm font-medium dark:text-white;
+}
+.form-container form input {
+    @apply bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white capitalize;
+}
+.form-container form textarea {
+    @apply bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white capitalize;
+    @apply min-h-[100px];
+}
+.form-container form select {
+    @apply capitalize bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 capitalize;
+}
+.form-container form .datepicker {
+    @apply ps-10;
+}

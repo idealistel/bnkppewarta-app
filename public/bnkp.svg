@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.44 62.25">
+<ellipse cx="16.22" cy="49.08" rx="15.47" ry="12.42" fill="none" class="stroke-current" stroke-miterlimit="10" stroke-width="1.5"/>
+<line x1="0.67" y1="49.08" x2="31.61" y2="49.08" fill="none" class="stroke-current" stroke-miterlimit="10" stroke-width="1.5"/>
+<path d="M18,44.13a30.29,30.29,0,0,0,26.81,0" transform="translate(-15.22 -1.25)" fill="none" class="stroke-current" stroke-miterlimit="10" stroke-width="1.5"/>
+<path d="M22.93,40c5.63,3.42,11.31,3.37,17,0" transform="translate(-15.22 -1.25)" fill="none" class="stroke-current" stroke-miterlimit="10" stroke-width="1.5"/>
+<path d="M44.84,56.53a30.29,30.29,0,0,0-26.81,0" transform="translate(-15.22 -1.25)" fill="none" class="stroke-current" stroke-miterlimit="10" stroke-width="1.5"/>
+<path d="M39.86,60.7c-5.63-3.42-11.31-3.37-17,0" transform="translate(-15.22 -1.25)" fill="none" class="stroke-current" stroke-miterlimit="10" stroke-width="1.5"/>
+<ellipse cx="16.14" cy="49.08" rx="10.48" ry="12.42" fill="none" class="stroke-current" stroke-miterlimit="10" stroke-width="1.5"/>
+<ellipse cx="16.22" cy="49.08" rx="4.15" ry="12.42" fill="none" class="stroke-current" stroke-miterlimit="10" stroke-width="1.5"/>
+<rect x="14.5" y="8.64" width="3.45" height="28.04" class="fill-current"/>
+<rect x="29.25" y="9.14" width="4.21" height="19.1" transform="translate(-2.55 48.8) rotate(-90)"/>
+<rect x="30.94" y="-0.85" width="1" height="19.1" transform="translate(24.92 -23.99) rotate(90)" class="fill-current"/>
+<polygon points="6.67 6.37 25.77 6.37 25.77 0 21.3 4.75 16.14 0 11.04 4.86 6.59 0 6.67 6.37" class="fill-current"/>
+<text transform="translate(6.67 14.8) scale(0.86 1)" font-size="8.4" font-family="News706BT-BoldC, News706 BT" font-weight="700" class="fill-current">B</text>
+<text transform="translate(20.02 14.8) scale(0.86 1)" font-size="8.4" font-family="News706BT-BoldC, News706 BT" font-weight="700" class="fill-current">N</text>
+<text transform="translate(6.64 26.06) scale(0.86 1)" font-size="8.4" font-family="News706BT-BoldC, News706 BT" font-weight="700" class="fill-current">K</text>
+<text transform="translate(19.98 26.06) scale(0.86 1)" font-size="8.4" font-family="News706BT-BoldC, News706 BT" font-weight="700" class="fill-current">P</text>
+</svg>
